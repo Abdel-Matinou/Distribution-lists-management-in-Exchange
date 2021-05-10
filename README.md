@@ -1,10 +1,10 @@
-#MANAGING DISTRIBUTIONS LISTS INSIDE ORGANISATION
+MANAGING DISTRIBUTIONS LISTS INSIDE ORGANISATION
 
 It's important to prevent sometimes distributions list to be publically available and reachable. 
 To comply with this kind of policies, Microsoft (in Exchange) allows admins to block external senders to email the distributions list (DL). 
 The downside is sometime some departments or business OU needs the DL to be openened for external senders. In this situation, there is 3 paths :
 
-    - PATH 1 : Unblock the DL and allows all external senders to email the DL. Secure and only internal - Downside, if some OU wants external com. they have to use shared mailboxes
+    - PATH 1 : Unblock the DL and allow all external senders to email the DL. Secure and only internal - Downside, if some OU wants external com. they have to use shared mailboxes
 
     - PATH 2 : Leave the DL blocked and only allow some known senders to email the DL by adding the known senders as Mail Contacts in EAC. This scenario is best if the specific senders are known and their number will not grow in significant way in the future. Mail contacts are considered as internal but cannot access company ressources.
 
