@@ -5,7 +5,7 @@ To comply with this kind of policies, Microsoft (in Exchange) allows admins to b
 The downside is sometime some departments or business OU need the DL to be openened for external senders. In this situation, there are 3 paths :
 
    **- PATH 1 :** 
-   Unblock the DL and allow all external senders to email the DL. Secure and only internal - Downside, if some OU wants external com. they have to use shared  mailboxes
+   Block the DL and disallow all external senders to email the DL. Secure and only internal. In this case, if some OU wants external emails to come through, they have to use shared  mailboxes.
 
    **- PATH 2 :** 
    Leave the DL blocked and only allow some known senders to email the DL by adding the known senders as Mail Contacts in EAC. This scenario is best if the specific senders are known and their number will not grow in significant way in the future. Mail contacts are considered as internal but cannot access company ressources.
