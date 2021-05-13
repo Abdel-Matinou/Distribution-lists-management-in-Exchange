@@ -1,18 +1,21 @@
 **HOW TO MANAGE O365 DISTRIBUTION LISTS WITH A LEVEL OF SECURITY**
 
 It's important to prevent sometimes distribution lists to be publically available and reachable. 
-To comply with this kind of policies, Microsoft (in Exchange) allows admins to block external senders to email the distributions list (DL). 
+To comply with this kind of policies, Microsoft (in Exchange) allows admins to block external senders to email the distribution list (called bellow "DL"). 
 The downside is sometime some departments or business OU need the DL to be openened for external senders. In this situation, there are 3 paths :
 
-   **- PATH 1 :** Unblock the DL and allow all external senders to email the DL. Secure and only internal - Downside, if some OU wants external com. they have to use shared mailboxes
+   **- PATH 1 :** 
+   Unblock the DL and allow all external senders to email the DL. Secure and only internal - Downside, if some OU wants external com. they have to use shared  mailboxes
 
-   **- PATH 2 :** Leave the DL blocked and only allow some known senders to email the DL by adding the known senders as Mail Contacts in EAC. This scenario is best if the specific senders are known and their number will not grow in significant way in the future. Mail contacts are considered as internal but cannot access company ressources.
+   **- PATH 2 :** 
+   Leave the DL blocked and only allow some known senders to email the DL by adding the known senders as Mail Contacts in EAC. This scenario is best if the specific senders are known and their number will not grow in significant way in the future. Mail contacts are considered as internal but cannot access company ressources.
 
-   **- PATH 3 :** Allow external senders, but use Mail flow rules to only allow emails from specific domains and targeted DLs. This is suitable in sutuation where the organisation will have lot of exchange with a partner, and where emails could be sent by anyone in the other organisation. The code attached explain how to do it from Powershell. 
+   **- PATH 3 :** 
+   Allow external senders, but use Mail flow rules to only allow emails from specific domains on targeted DLs. This is suitable in situation where the organisation will have a lot of exchange with a partner, and where emails could be sent by anyone in the other organisation. The code attached explain how to do it from Powershell. 
 
-What are other paths that you could or maybe have looked for :
+What are other "misleading" paths that you could or maybe have looked for :
 
-   _- USING REMOTE DOMAINS :_
+   _- USE REMOTE DOMAINS :_
     A remote domain allows admins to add a domain that Exchange will treat as internal and overide some settings such as :
         - Out of office messages
         - Automatic replies
