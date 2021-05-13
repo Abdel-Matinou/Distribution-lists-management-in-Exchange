@@ -5,7 +5,7 @@ $AllowedDomains = "Value", "Value2", "Add your own domains + external domains"
 $Addressfor_IncidentReport = "Type an email address"
 $TransportRule_Name = "Type the transportRule name"
 
-# The following command will put any message to the DL in Quarantine or Deletethemessage without NDR, expect emails coming from allowed domains
+# The following command will put any message to the DL in Quarantine or Delete the message without NDR, expect emails coming from allowed domains
 
 New-TransportRule 
     -name $TransportRule_Name
@@ -15,4 +15,4 @@ New-TransportRule
     -ExceptIfSenderDomainIs $AllowedDomains 
     -Mode "Auditandnotify | Enforce" # Testmode or Apply the rule, First test and use Set-TransportRule to change the settings
     -GenerateIncidentReport $Addressfor_IncidentReport
-    -IncidentReportContent ruledetections, sender, recipients, cc, attachOriginalMail
+    -IncidentReportContent ruledetections, sender, recipients, cc, attachOriginalMail #this will parameter allows you to include all the details needed in the delivery report.
