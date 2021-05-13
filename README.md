@@ -17,11 +17,11 @@ What are other "misleading" paths that you could or maybe have looked for :
 
    _- USE REMOTE DOMAINS :_
     A remote domain allows admins to add a domain that Exchange will treat as internal and overide some settings such as :
-        - Out of office messages
-        - Automatic replies
-        - Automatic forwarding
-        - Delivery reports
-        - Content filtering and matching
+     - Out of office messages
+     - Automatic replies
+     - Automatic forwarding
+     - Delivery reports
+     - Content filtering and matching
     However, Remote domain cannot override the blockage to receive emails on DLs and thus emails coming from a Remote domain will be blocked by the DL policy. 
 
    _- USE MAIL FLOW TO FILTER AND BYBASS THE BLOCKAGE ON A DL :_
