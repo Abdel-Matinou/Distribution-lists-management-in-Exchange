@@ -16,13 +16,14 @@ The downside is sometime some departments or business OU need the DL to be opene
 What are other "misleading" paths that you could or maybe have looked for :
 
    _- USE REMOTE DOMAINS :_
-    A remote domain allows admins to add a domain that Exchange will treat as internal and overide some settings such as :
+A remote domain allows admins to add a domain that Exchange will treat as internal and overide some settings such as :
+
      - Out of office messages
      - Automatic replies
      - Automatic forwarding
      - Delivery reports
-     - Content filtering and matching
-    However, Remote domain cannot override the blockage to receive emails on DLs and thus emails coming from a Remote domain will be blocked by the DL policy. 
+     - Content filtering and matching.
+However, Remote domain cannot override the blockage to receive emails on DLs and thus emails coming from a Remote domain will be blocked by the DL policy. 
 
    _- USE MAIL FLOW TO FILTER AND BYBASS THE BLOCKAGE ON A DL :_
     Somehow, the setting on a DL to block external emails have a high a priority level that cannot be seen in the mail flow trace, and will be treated before any transport rule you can create in the mail flow. Hence, if you leave the setting to receive external emails OFF and create a rule to accept emails only from a given domain, the rule won't work and the incoming email will be rejected even if the email matches the rule. ###Only workaround is to allow external senders on the DL, then use a Transport rule in mail flow to filter the emails reaching the DL.
