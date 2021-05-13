@@ -1,6 +1,6 @@
 **HOW TO MANAGE O365 DISTRIBUTION LISTS WITH A LEVEL OF SECURITY**
 
-It's important to prevent sometimes distribution lists to be publically available and reachable. 
+It's important to prevent sometime distribution lists to be publically available and reachable. 
 To comply with this kind of policies, Microsoft (in Exchange) allows admins to block external senders to email the distribution list (called bellow "DL"). 
 The downside is sometime some departments or business OU need the DL to be openened for external senders. In this situation, there are 3 paths :
 
