@@ -2,7 +2,7 @@
 
 It's important to prevent sometime distribution lists to be publically available and reachable. 
 To comply with this kind of policies, Microsoft (in Exchange) allows admins to block external senders to email the distribution list (called bellow "DL"). 
-The downside is sometime some departments or business OU need the DL to be openened for external senders. In this situation, there are 3 paths :
+The downside is sometime some departments or business OU need the DL to be opened for external senders. In this situation, there are 3 paths :
 
    **- PATH 1 :** 
    Block the DL and disallow all external senders to email the DL. Secure and only internal. In this case, if some OU wants external emails to come through, they have to use shared  mailboxes.
